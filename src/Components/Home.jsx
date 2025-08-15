@@ -5,8 +5,8 @@ import Ui from "./Ui";
 // Simple Stat component
 function Stat({ label, value }) {
   return (
-    <div className="flex flex-col items-center justify-center rounded-lg bg-white/10 p-4 backdrop-blur">
-      <div className="text-2xl font-bold text-white">{value}</div>
+    <div className="flex flex-col items-center justify-center rounded-lg bg-red-500/10 p-4 backdrop-blur">
+      <div className="text-2xl font-bold text-red-500">{value}</div>
       <div className="text-sm text-gray-200">{label}</div>
     </div>
   );
@@ -33,28 +33,28 @@ export default function Hero() {
 
   return (
     <>
-    <Ui/>
-    <section className="relative overflow-hidden py-20 sm:py-28 bg-gradient-to-br from-purple-900 via-indigo-900 to-black">
+    {/* <Ui/> */}
+    <section className="relative overflow-hidden py-20 sm:py-28 bg-gradient-to-br from-gray-100 via-gray-300 to-black">
       <div className="container mx-auto flex flex-col items-center justify-between gap-10 lg:flex-row lg:items-center px-4">
         {/* Left Content */}
         <div className="max-w-2xl">
-          <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-red-500 sm:text-5xl lg:text-6xl">
             Nexgen Educare Academy
           </h1>
-          <p className="mt-5 max-w-xl text-base text-purple-100/90 sm:text-lg">
+          <p className="mt-5 max-w-xl text-base text-black-100/90 sm:text-lg">
             At our academy, we empower learners with innovative education, fostering growth,
             creativity, and success through personalized learning experiences.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#solution"
-              className="rounded-xl bg-white px-5 py-3 text-sm font-medium text-purple-700 shadow-sm transition hover:translate-y-[-1px] hover:shadow"
+              className="rounded-xl bg-red-500 px-5 py-3 text-sm font-medium text-white shadow-sm transition hover:translate-y-[-1px] hover:shadow"
             >
-              Explore Solutions
+              Explore Courses
             </a>
             <a
               href="#contact"
-              className="rounded-xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-medium text-white backdrop-blur transition hover:bg-white/20"
+              className="rounded-xl border border-red-500/20 bg-red-500/10 px-5 py-3 text-sm font-medium text-red-500 backdrop-blur transition hover:bg-red-500/20"
             >
               Contact Us
             </a>
@@ -63,7 +63,7 @@ export default function Hero() {
 
         {/* Right Animated Stats */}
         <motion.div
-          className="grid w-full max-w-lg grid-cols-3 gap-3 sm:gap-4 lg:max-w-md p-4 rounded-xl bg-white/5 backdrop-blur-lg"
+          className="grid w-full max-w-lg grid-cols-3 gap-3 sm:gap-4 lg:max-w-md p-4 rounded-xl bg-red-500/5 backdrop-blur-lg"
           style={{
             rotateX: isHovering ? rotateX : 0,
             rotateY: isHovering ? rotateY : 0,

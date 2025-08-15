@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "../assets/Logo.png"
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -10,15 +11,17 @@ export default function Navbar() {
     { name: "Courses", path: "/courses" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
-    { name: "Services", path: "/services" },
+   
   ];
 
   return (
-    <header className="bg-gradient-to-r from-purple-900/80 to-indigo-900/80 backdrop-blur-lg border-b border-white/10 relative">
+    <header className="bg-gray-200 backdrop-blur-lg border-b border-red-500/10 relative fixed">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         {/* Logo */}
-        <Link to="/" className="text-white text-2xl font-bold">
-          Nexgen <span className="text-purple-400">Educare</span>
+       
+        <Link to="/" className="text-red-500 text-2xl font-bold">
+         <img src={logo} alt="" className="w-16 h-16"/>
+          {/* Nexgen <span className="text-purple-400">Educare</span> */}
         </Link>
 
         {/* Desktop Menu */}
@@ -27,7 +30,7 @@ export default function Navbar() {
             <Link
               key={item.name}
               to={item.path}
-              className="text-gray-200 hover:text-white text-xl font-medium transition-colors"
+              className="text-red-500 hover:text-red-500 text-xl font-medium transition-colors"
             >
               {item.name}
             </Link>
@@ -36,7 +39,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white focus:outline-none"
+          className="md:hidden text-red-500 focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           ☰
@@ -50,13 +53,13 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="md:hidden bg-purple-900/95 border-t border-white/10 px-4 py-3 space-y-3"
+            className="md:hidden bg-white px-4 py-3 space-y-3"
           >
             {menuItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
-                className="block text-gray-200 hover:text-white transition-colors"
+                className="block text-red-500 hover:text-red-500 transition-colors"
                 onClick={() => setMenuOpen(false)}
               >
                 {item.name}
@@ -64,7 +67,7 @@ export default function Navbar() {
             ))}
             <Link
               to="/enroll"
-              className="block rounded-lg bg-purple-500 px-5 py-2 text-sm font-medium text-white shadow-lg hover:bg-purple-600 transition"
+              className="block rounded-lg bg-white px-5 py-2 text-sm font-medium text-red-500 shadow-lg hover:bg-purple-600 transition"
               onClick={() => setMenuOpen(false)}
             >
               Enroll Now

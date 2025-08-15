@@ -3,7 +3,7 @@ import logo from "../assets/Logo.png";
 
 export default function Footer() {
     return (
-        <footer className="bg-gradient-to-br from-purple-900 via-indigo-900 to-black text-white text-lg">
+        <footer className="bg-gradient-to-br from-gray-100 via-gray-300 to-black text-red-500 text-lg">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
                 {/* Top Section */}
                 <div className="grid gap-8 md:grid-cols-5">
@@ -15,8 +15,8 @@ export default function Footer() {
                                 Nexgen Educare Academy
                             </h1>
                         </div>
-                        <h2 className="text-lg font-semibold">About Us</h2>
-                        <p className="text-sm text-purple-200">
+                        <h2 className="text-xl font-semibold">About Us</h2>
+                        <p className="text-xl text-black">
                             We create innovative solutions that blend technology and
                             creativity to help businesses succeed in the digital age.
                         </p>
@@ -24,25 +24,25 @@ export default function Footer() {
 
                     {/* Quick Links */}
                     <div>
-                        <h2 className="text-lg font-semibold">Quick Links</h2>
-                        <ul className="mt-3 space-y-2 text-sm text-purple-200">
+                        <h2 className="text-xl font-semibold">Quick Links</h2>
+                        <ul className="mt-3 space-y-2  text-black text-xl">
                             <li>
-                                <a href="#home" className="hover:text-white">
+                                <a href="#home" className="hover:text-red-500">
                                     Home
                                 </a>
                             </li>
-                            <li>
-                                <a href="#services" className="hover:text-white">
+                            {/* <li>
+                                <a href="#services" className="hover:text-red-500">
                                     Services
                                 </a>
-                            </li>
+                            </li> */}
                             <li>
-                                <a href="#about" className="hover:text-white">
+                                <a href="#about" className="hover:text-red-500">
                                     About
                                 </a>
                             </li>
                             <li>
-                                <a href="#contact" className="hover:text-white">
+                                <a href="#contact" className="hover:text-red-500">
                                     Contact
                                 </a>
                             </li>
@@ -51,8 +51,8 @@ export default function Footer() {
 
                     {/* Support */}
                     <div>
-                        <h2 className="text-lg font-semibold">Support</h2>
-                        <ul className="mt-3 space-y-2 text-sm text-purple-200">
+                        <h2 className="text-xl font-semibold">Support</h2>
+                        <ul className="mt-3 space-y-2 text-xl text-black">
                             <li>Privacy Policy</li>
                             <li>Terms & Conditions</li>
                         </ul>
@@ -61,7 +61,7 @@ export default function Footer() {
                     {/* Contact */}
                     <div>
                         <h2 className="text-lg font-semibold">Contact</h2>
-                        <ul className="mt-3 space-y-2 text-sm text-purple-200">
+                        <ul className="mt-3 space-y-2 text-sm text-black">
                             <li><span className="text-xl font-medium">Email:</span> nexgeneducareacademy@gmail.com</li>
                             <li><span className="text-xl font-medium">Phone:</span> +91 9056729370</li>
                             <li><span className="text-xl font-medium">Location:</span>  SCO 4-5, Second Floor, New Sunny Enclave,
@@ -72,8 +72,8 @@ export default function Footer() {
             </div>
 
             {/* Bottom Line */}
-            <div className="border-t border-purple-700 text-center">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 m-auto flex-col sm:flex-row justify-between items-center text-sm text-purple-300 gap-3">
+            <div className="border-t border-red-700 text-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 m-auto flex-col sm:flex-row justify-between items-center text-sm text-black gap-3">
                     <p>© {new Date().getFullYear()} Your Company. All rights reserved.</p>
                     <p>Powered by Greekology </p>
                 </div>

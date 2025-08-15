@@ -3,7 +3,7 @@ import logo from "../assets/Logo.png";
 
 export default function IntroSection() {
   return (
-    <section className="bg-gradient-to-br from-indigo-900 via-purple-900 to-black text-white">
+    <section className="bg-gradient-to-br from-indigo-900 via-purple-900 to-black text-red-500">
       <div className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         
         {/* Left Side - Image */}
@@ -35,13 +35,13 @@ export default function IntroSection() {
           </p>
 
           {/* Search Box */}
-          <div className="bg-white rounded-full overflow-hidden flex items-center shadow-lg w-full max-w-md">
+          <div className="bg-red-500 rounded-full overflow-hidden flex items-center shadow-lg w-full max-w-md">
             <input
               type="text"
               placeholder="www.NexgenEducare.com"
               className="px-5 py-3 w-full text-gray-800 outline-none"
             />
-            <button className="bg-purple-600 hover:bg-purple-700 px-5 py-3 text-white font-medium">
+            <button className="bg-purple-600 hover:bg-purple-700 px-5 py-3 text-red-500 font-medium">
               🔍
             </button>
           </div>
