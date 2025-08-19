@@ -47,13 +47,13 @@ export default function Hero() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href="#solution"
+              href="/courses"
               className="rounded-xl bg-red-500 px-5 py-3 text-sm font-medium text-white shadow-sm transition hover:translate-y-[-1px] hover:shadow"
             >
               Explore Courses
             </a>
             <a
-              href="#contact"
+              href="/contact"
               className="rounded-xl border border-red-500/20 bg-red-500/10 px-5 py-3 text-sm font-medium text-red-500 backdrop-blur transition hover:bg-red-500/20"
             >
               Contact Us
