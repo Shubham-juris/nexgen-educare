@@ -54,8 +54,9 @@ export default function Course1() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 via-gray-300 to-black text-red-500 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center mb-12">
-        <h1 className="text-4xl sm:text-5xl font-bold">Our Courses</h1>
-        <p className="mt-4 text-black text-lg">
+       
+         <h1 className="text-4xl sm:text-5xl font-bold mt-24">Our Courses</h1>
+        <p className="mt-4 text-black text-xl">
           Learn from our range of professional courses and upgrade your skills.
         </p>
       </div>

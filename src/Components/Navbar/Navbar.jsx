@@ -74,7 +74,7 @@ const Navbar = () => {
       <Toolbar
         sx={{
           display: 'flex',
-          justifyContent: 'center', // Centering the content
+          justifyContent: 'center', 
           alignItems: 'center',
           width: '100%',
         }}
@@ -83,8 +83,8 @@ const Navbar = () => {
           sx={{
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center', // Center the content within this box
-            maxWidth: '1200px', // Optional: Limit the width for larger screens
+            justifyContent: 'center', 
+            maxWidth: '1200px',
             width: '100%',
           }}
         >

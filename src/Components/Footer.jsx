@@ -15,7 +15,7 @@ export default function Footer() {
                                 Nexgen Educare Academy
                             </h1>
                         </div>
-                        <h2 className="text-xl font-semibold">About Us</h2>
+
                         <p className="text-xl text-black">
                             We create innovative solutions that blend technology and
                             creativity to help businesses succeed in the digital age.
@@ -25,27 +25,11 @@ export default function Footer() {
                     {/* Quick Links */}
                     <div>
                         <h2 className="text-xl font-semibold">Quick Links</h2>
-                        <ul className="mt-3 space-y-2  text-black text-xl">
-                            <li>
-                                <a href="/" className="hover:text-red-500">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/courses" className="hover:text-red-500">
-                                    Courses
-                                </a>
-                            </li> 
-                            <li>
-                                <a href="/about" className="hover:text-red-500">
-                                    About
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/contact" className="hover:text-red-500">
-                                    Contact
-                                </a>
-                            </li>
+                        <ul className="mt-3 space-y-2 text-black text-xl">
+                            <li><a href="/" className="hover:text-red-500">Home</a></li>
+                            <li><a href="/courses" className="hover:text-red-500">Courses</a></li>
+                            <li><a href="/about" className="hover:text-red-500">About</a></li>
+                            <li><a href="/contact" className="hover:text-red-500">Contact</a></li>
                         </ul>
                     </div>
 
@@ -62,10 +46,29 @@ export default function Footer() {
                     <div>
                         <h2 className="text-lg font-semibold">Contact</h2>
                         <ul className="mt-3 space-y-2 text-sm text-black">
-                            <li><span className="text-xl font-medium">Email:</span> nexgeneducareacademy@gmail.com</li>
-                            <li><span className="text-xl font-medium">Phone:</span> +91 9056729370</li>
-                            <li><span className="text-xl font-medium">Location:</span>  SCO 4-5, Second Floor, New Sunny Enclave,
-                                Sector-125, Mohali, Punjab - 140301</li>
+                            <li>
+                                <span className="text-xl font-medium">Email: </span>
+                                <a 
+                                    href="mailto:nexgeneducareacademy@gmail.com"
+                                    className="text-red-600 hover:underline"
+                                >
+                                    nexgeneducareacademy@gmail.com
+                                </a>
+                            </li>
+                            <li>
+                                <span className="text-xl font-medium">Phone: </span>
+                                <a 
+                                    href="tel:+919056729370" 
+                                    className="text-red-600 hover:underline"
+                                >
+                                    +91 9056729370
+                                </a>
+                            </li>
+                            <li className="text-red-600">
+                                <span className="text-xl text-black  font-medium">Location: </span>  
+                                SCO 4-5, Second Floor, New Sunny Enclave,
+                                Sector-125, Mohali, Punjab - 140301
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -74,8 +77,8 @@ export default function Footer() {
             {/* Bottom Line */}
             <div className="border-t border-red-700 text-center">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 m-auto flex-col sm:flex-row justify-between items-center text-sm text-black gap-3">
-                    <p>© {new Date().getFullYear()} Your Company. All rights reserved.</p>
-                    <p>Powered by <span className="text-xl text-red-700">Greekology </span></p>
+                    <p>© {new Date().getFullYear()} Nexgen Educare Academy. All rights reserved.</p>
+                    <p>Powered by <span className="text-xl text-red-700">Greekology</span></p>
                 </div>
             </div>
         </footer>

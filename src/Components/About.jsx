@@ -3,14 +3,14 @@ import logo from "../assets/Logo.png";
 
 export default function IntroSection() {
   return (
-    <section className="bg-gradient-to-br from-indigo-900 via-purple-900 to-black text-red-500">
-      <div className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <section className="bg-gradient-to-br from-indigo-900 via-purple-900 to-black text-red-500 mt-10">
+      <div className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-16">
         
         {/* Left Side - Image */}
       
 
         {/* Right Side - Content */}
-        <div className="space-y-6 order-1 md:order-2">
+        <div className="space-y-6 order-1 md:order-2 mt-16">
           {/* Logo + Title */}
           <div className="flex items-center gap-3">
             <img src={logo} alt="logo" className="w-12 h-12" />
