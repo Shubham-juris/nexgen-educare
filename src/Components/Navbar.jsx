@@ -5,12 +5,12 @@ import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation(); // to track current route
+  const location = useLocation(); 
 
   const menuItems = [
     { name: "Home", path: "/" },
-    { name: "Courses", path: "/courses" },
     { name: "About", path: "/about" },
+    { name: "Courses", path: "/courses" },
     { name: "Contact", path: "/contact" },
   ];
 

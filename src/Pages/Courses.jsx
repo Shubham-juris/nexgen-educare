@@ -5,10 +5,12 @@ import Course3 from '../Components/Course3';
 import Course4 from '../Components/Course4';
 import Course5 from '../Components/Course5';
 import Course6 from '../Components/Course6';
+import MedicalTechnologyCourses from '../Components/MedicalTechnologyCourses';
 
 const Courses = () => {
   return (
     <div>
+      <MedicalTechnologyCourses/>
         <Course1/>
         <Course2/>
         <Course3/>
