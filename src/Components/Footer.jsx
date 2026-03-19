@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 import logo from "../assets/Logo.png";
 
 export default function Footer() {
@@ -23,6 +24,36 @@ export default function Footer() {
               We create innovative solutions that blend technology and
               creativity to help businesses succeed in the digital age.
             </p>
+            {/* Social Icons */}
+            <div className="flex gap-4 pt-2">
+              <a
+                href="https://www.facebook.com/Nexgeneducareacademy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-black p-3 rounded-full hover:bg-red-500 hover:text-white transition"
+              >
+                <FaFacebookF />
+              </a>
+
+              <a
+                href="https://www.instagram.com/nexgeneducareacademy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-black p-3 rounded-full hover:bg-red-500 hover:text-white transition"
+              >
+                <FaInstagram />
+              </a>
+
+              <a
+                href="https://x.com/AcademyNex37019"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-black p-3 rounded-full hover:bg-red-500 hover:text-white transition"
+              >
+                <FaXTwitter />
+              </a>
+            </div>
+
           </div>
 
           {/* Quick Links */}
